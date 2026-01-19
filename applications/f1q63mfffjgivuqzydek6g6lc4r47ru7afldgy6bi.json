@@ -1,0 +1,66 @@
+{
+  "Version": "1.3",
+  "ID": "f1q63mfffjgivuqzydek6g6lc4r47ru7afldgy6bi",
+  "Issue Number": "1",
+  "Client": {
+    "Name": "Weather Program Office (WPO)",
+    "Region": "United States",
+    "Industry": "Life Science / Healthcare",
+    "Website": "https://wpo.noaa.gov/the-hurricane-analysis-and-forecast-system-hafs/",
+    "Social Media": "https://wpo.noaa.gov/contact-us/",
+    "Social Media Type": "Other",
+    "Role": "Data Preparer"
+  },
+  "Project": {
+    "Brief history of your project and organization": "The Weather Program Office (WPO), part of NOAA’s Office of Oceanic and Atmospheric Research, funds and advances collaborative weather research. It transitions science into accurate, actionable forecasts to build a Weather-Ready Nation.WPO partners with the National Weather Service, academia, government, and industry, focusing on tropical cyclones, severe storms, fire weather, air quality, and social science.Shaped by the 2017 Weather Research and Forecasting Innovation Act, WPO drives priorities in modeling, observations, and research-to-operations. Today, it operates through four divisions, supports the Unified Forecast System, and promotes open-science innovation.",
+    "Is this project associated with other projects/ecosystem stakeholders?": "No",
+    "Describe the data being stored onto Filecoin": "The NOAA NWS HAFS dataset on AWS Open Data Registry contains output from the Hurricane Analysis and Forecast System (HAFS), NOAA's next-generation multi-scale hurricane model. It provides operational forecasts up to 7 days for track, intensity (including rapid intensification), size, genesis, storm surge, rainfall, and tornadoes. Data includes event-driven forecast cycles (e.g., from 2022 Atlantic season) in GRIB2/NetCDF formats, stored in the S3 bucket s3://noaa-nws-hafs-pds.\n\ns3://noaa-nws-hafs-pds\t1.0 PiB",
+    "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+    "How do you plan to prepare the dataset": "1. Downloading files from s3://noaa-nws-hafs-pds using AWS CLI or boto3.\n2. To pack data into CAR files (Content Addressable Archives) with each file under 32GB\n3. Copy the CAR files to a hard drive, then ship the hard drive to the storage  provider.\n4. storage  provider import deals ,verification & activation",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "aws s3 ls --no-sign-request s3://noaa-nws-hafs-pds/\nhttps://noaa-nws-hafs-pds.s3.amazonaws.com/index.html",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[x] I confirm",
+    "What is the expected retrieval frequency for this data": "Yearly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "1 to 1.5 years",
+    "In which geographies do you plan on making storage deals": "Asia other than Greater China, North America",
+    "How will you be distributing your data to storage providers": "Shipping hard drives",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "f02827565  Vietnam  \nf02826715  United States  \nf02825420  Taiwan  \nf02827377  Taiwan  \nf02827448  Vietnam",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "5PiB",
+    "Single Size Dataset": "1PiB",
+    "Replicas": 5,
+    "Weekly Allocation": "1PiB"
+  },
+  "Lifecycle": {
+    "State": "Granted",
+    "Validated At": "2026-01-19 01:53:12.161310197 UTC",
+    "Validated By": "MetazoaZ",
+    "Active": true,
+    "Updated At": "2026-01-19 01:53:12.161304844 UTC",
+    "Active Request ID": "db4f3ec3-9300-44f7-9b2c-18e38ebe3fd0",
+    "On Chain Address": "f1q63mfffjgivuqzydek6g6lc4r47ru7afldgy6bi",
+    "Multisig Address": "false",
+    "edited": false
+  },
+  "Allocation Requests": [
+    {
+      "ID": "db4f3ec3-9300-44f7-9b2c-18e38ebe3fd0",
+      "Request Type": "First",
+      "Created At": "2026-01-19 00:34:51.446856438 UTC",
+      "Updated At": "2026-01-19 00:34:51.446857418 UTC",
+      "Active": false,
+      "Allocation Amount": "281474976710656 B",
+      "Signers": [
+        {
+          "Github Username": "MetazoaZ",
+          "Signing Address": "f1lt75lgz2ijv3i42pr7p45m4fog4kxcppbszq7jy",
+          "Created At": "2026-01-19 01:53:06.651000000 UTC",
+          "Message CID": "bafy2bzacebn7cn57qodtmqh7d2ol2dzyadkiu6ohs2csk5oau2ifinpbawl4k"
+        }
+      ]
+    }
+  ]
+}
