@@ -1,0 +1,49 @@
+{
+  "Version": "1.3",
+  "ID": "f1mcyg5a3trfzm3e3no5neexrjt7k2ida5zhfcbty",
+  "Issue Number": "10",
+  "Client": {
+    "Name": "UCLA Center for Climate Science",
+    "Region": "United States",
+    "Industry": "Environment",
+    "Website": "",
+    "Social Media": "https://dept.atmos.ucla.edu/alexhall/our-team",
+    "Social Media Type": "Other",
+    "Role": "Data Preparer"
+  },
+  "Project": {
+    "Brief history of your project and organization": "Our group in UCLA's Department of Atmospheric and Oceanic Sciences is made up of talented researchers, postdoctoral scholars, graduate students, and staff. Our work focuses on reducing the uncertainty in future projections of climate, at both global and regional scales.\nMany group members are also affiliated with the UCLA IoES Center for Climate Science, led by Alex Hall, which focuses on regional climate modeling and interdisciplinary projects using regional climate projections.\nInterested in working in our group as a graduate or undergraduate student? Check out some helpful information for prospective students.\n\nOur body of research contains work along several different themes, but all our projects have one thing in common: They aim to reduce uncertainty in future projections of climate. With less uncertainty, society can make better-informed decisions about curbing and adapting to climate change.",
+    "Is this project associated with other projects/ecosystem stakeholders?": "No",
+    "Describe the data being stored onto Filecoin": "https://wrf-cmip6-noversioning.s3.amazonaws.com/index.html\n\naws s3 ls --no-sign-request s3://wrf-cmip6-noversioning/   605.6 TiB",
+    "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+    "How do you plan to prepare the dataset": "1.Download the metadata from AWS to local disk.  \n2.Archive the data into a tar file (keep individual file size between 20–32 GiB), then use the go-car pack tool to package it into a Filecoin-compliant CAR file.  \n3.Distribute the generated CAR file to Storage Providers (SPs) for sealing.",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "https://wrf-cmip6-noversioning.s3.amazonaws.com/index.html",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[x] I confirm",
+    "What is the expected retrieval frequency for this data": "",
+    "For how long do you plan to keep this dataset stored on Filecoin": "1 to 1.5 years",
+    "In which geographies do you plan on making storage deals": "Asia other than Greater China, South America",
+    "How will you be distributing your data to storage providers": "Shipping hard drives, HTTP or FTP server",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "f02827711 – South Korea\nf02825740 – Japan\nf02827493 – Taiwan\nf02827667 – United States\nf02826371 – Vietnam",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": ""
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "3PiB",
+    "Single Size Dataset": "605.6TiB",
+    "Replicas": 5,
+    "Weekly Allocation": "1.5PiB"
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2026-01-31 10:38:51.570442841 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f1mcyg5a3trfzm3e3no5neexrjt7k2ida5zhfcbty",
+    "Multisig Address": "false",
+    "edited": false
+  },
+  "Allocation Requests": []
+}
