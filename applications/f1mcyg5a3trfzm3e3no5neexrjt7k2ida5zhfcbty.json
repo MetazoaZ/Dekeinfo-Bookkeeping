@@ -35,11 +35,11 @@
     "Weekly Allocation": "1.5PiB"
   },
   "Lifecycle": {
-    "State": "ReadyToSign",
-    "Validated At": "2026-10-05 11:59:21.018750767 UTC",
+    "State": "Granted",
+    "Validated At": "2026-10-05 12:01:34.033610727 UTC",
     "Validated By": "MetazoaZ",
     "Active": true,
-    "Updated At": "2026-10-05 11:59:21.018755035 UTC",
+    "Updated At": "2026-10-05 12:01:34.033604248 UTC",
     "Active Request ID": "93639f5a-2d53-47c8-8da3-6ef0f6b573df",
     "On Chain Address": "f1mcyg5a3trfzm3e3no5neexrjt7k2ida5zhfcbty",
     "Multisig Address": "false",
@@ -131,9 +131,16 @@
       "Request Type": "Refill",
       "Created At": "2026-10-05 11:59:21.018764346 UTC",
       "Updated At": "2026-10-05 11:59:21.018765075 UTC",
-      "Active": true,
+      "Active": false,
       "Allocation Amount": "703687441776640B",
-      "Signers": []
+      "Signers": [
+        {
+          "Github Username": "MetazoaZ",
+          "Signing Address": "f1lt75lgz2ijv3i42pr7p45m4fog4kxcppbszq7jy",
+          "Created At": "2026-10-05 12:01:30.800000000 UTC",
+          "Message CID": "bafy2bzacebzu64xrabawlmeaqitvayzaqcm7hmpivfcogy3uauvuqrb47e7bs"
+        }
+      ]
     }
   ]
 }
